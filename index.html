@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO-секция-->
+    <meta
+      property="og:title"
+      content="Андрей Борода - магазин средств для роста волос и бороды"
+    />
+    <meta
+      property="og:description"
+      content="Качественные средства для роста волос и бороды. Minoxidil Kirkland Signature, миноксидил в таблетках, крем и пена. Доставка по России."
+    />
+    <meta
+      property="og:url"
+      content="https://andrey-beard.github.io/beard-shop/index.html"
+    />
+
+    <title>Андрей Борода - Главная</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+    <style>
+      .hero-section {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 80px 0;
+      }
+      .owner-photo {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border: 5px solid white;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      }
+      .feature-card {
+        transition: all 0.3s ease;
+        border: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        height: 100%;
+      }
+      .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+      }
+      footer {
+        margin-top: auto;
+      }
+      .btn-group-custom {
+        display: flex;
+        gap: 1rem;
+      }
+      @media (max-width: 768px) {
+        .owner-photo {
+          width: 200px;
+          height: 200px;
+          margin-bottom: 2rem;
+        }
+        .hero-section {
+          padding: 60px 0;
+        }
+        .btn-group-custom {
+          flex-direction: column;
+          gap: 0.75rem;
+        }
+        .btn-group-custom .btn {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="d-flex flex-column min-vh-100">
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Андрей Борода</a>
+        <div class="navbar-nav">
+          <a class="nav-link" href="products.html">Товары</a>
+          <a class="nav-link" href="contacts.html">Контакты</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Секция автора -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
+            <img
+              src="images/owner.jpg"
+              alt="Андрей Хасанов - владелец магазина"
+              class="owner-photo rounded-circle"
+            />
+          </div>
+          <div class="col-lg-8 text-center text-lg-start">
+            <h1 class="display-4 fw-bold mb-3">Андрей Хасанов</h1>
+            <p class="lead mb-4 fs-5">
+              Основатель магазина качественных средств для роста волос и бороды
+            </p>
+            <p class="mb-4">
+              Лично тестирую всю продукцию и гарантирую качество каждого товара.
+              Более 5 лет опыта в сфере ухода за волосами и бородой.
+            </p>
+
+            <!-- Группа кнопок -->
+            <div class="btn-group-custom">
+              <a href="products.html" class="btn btn-light btn-lg px-4 fw-bold"
+                >Смотреть товары</a
+              >
+              <a
+                href="contacts.html"
+                class="btn btn-outline-light btn-lg px-4 fw-bold"
+                >Связаться со мной</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Основной контент -->
+    <div class="container my-5 flex-grow-1">
+      <div class="row g-4">
+        <!-- О нас -->
+        <div class="col-12">
+          <div class="card feature-card">
+            <div class="card-body p-4 text-center">
+              <h2 class="card-title mb-4 text-primary">О магазине</h2>
+              <p class="card-text fs-5">
+                Я специализируюсь на продаже качественных средств для роста
+                волос и бороды. В ассортименте только оригинальная и проверенная
+                продукция от известных брендов. Каждый товар протестирован лично
+                мной, и я гарантирую его эффективность и качество.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Преимущества -->
+        <div class="col-md-4">
+          <div class="card feature-card text-center">
+            <div class="card-body p-4">
+              <i class="bi bi-check-circle-fill text-success fs-1 mb-3"></i>
+              <h5 class="card-title">Качество</h5>
+              <p class="card-text">
+                Только оригинальная продукция с гарантией качества
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card feature-card text-center">
+            <div class="card-body p-4">
+              <i class="bi bi-truck text-primary fs-1 mb-3"></i>
+              <h5 class="card-title">Доставка</h5>
+              <p class="card-text">Быстрая доставка по всей России</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card feature-card text-center">
+            <div class="card-body p-4">
+              <i class="bi bi-headset text-warning fs-1 mb-3"></i>
+              <h5 class="card-title">Поддержка</h5>
+              <p class="card-text">Консультация и поддержка 24/7</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Личная гарантия -->
+        <div class="col-12">
+          <div class="card feature-card">
+            <div class="card-body p-4">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <h3 class="card-title text-primary mb-3">
+                    Личная гарантия качества
+                  </h3>
+                  <p class="card-text fs-6">
+                    Я лично тестирую всю продукцию перед тем, как предложить её
+                    вам. Мой опыт использования средств для роста волос и бороды
+                    позволяет мне рекомендовать только самые эффективные и
+                    безопасные продукты.
+                  </p>
+                  <p class="card-text fs-6">
+                    Если у вас есть вопросы по выбору подходящего средства - не
+                    стесняйтесь обращаться ко мне за консультацией. Помогу
+                    подобрать оптимальный вариант именно для вашего случая.
+                  </p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <i
+                    class="bi bi-award-fill text-warning"
+                    style="font-size: 4rem"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Футер -->
+    <footer class="bg-dark text-light py-4 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="mb-1">ИП Хасанов Андрей Андреевич</p>
+            <p class="mb-0">323300000021625</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
