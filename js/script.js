@@ -69,6 +69,15 @@ const products = [
     priceNote: "",
     image: "images/minoxidil-finasterid.jpg",
   },
+  {
+    id: 9,
+    title: "Лосьон Rugen (действующее вещество RU58841), 50 мл.",
+    description:
+      "Аналог Финастерида, но в отличие от него не блокирует ДГТ.",
+    price: "7500 руб.",
+    priceNote: "",
+    image: "images/rugen-lotion.jpg",
+  },
 ];
 
 // Инициализация при загрузке страницы
@@ -139,4 +148,5 @@ function openProductModal(productId) {
   const modal = new bootstrap.Modal(document.getElementById("productModal"));
   modal.show();
 }
+
 
