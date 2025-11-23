@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://ваш-username.github.io/ваш-репозиторий/sitemap.xml
+
+Sitemap: https://github.com/andrey-beard/beard-shop/edit/main/sitemap.xml
