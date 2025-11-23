@@ -139,3 +139,4 @@ function openProductModal(productId) {
   const modal = new bootstrap.Modal(document.getElementById("productModal"));
   modal.show();
 }
+
