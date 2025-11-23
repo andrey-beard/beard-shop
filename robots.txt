@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://github.com/andrey-beard/beard-shop/blob/main/sitemap.xml
-
