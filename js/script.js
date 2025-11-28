@@ -72,8 +72,8 @@ const products = [
   },
   {
     id: 9,
-    title: "Лосьон Rugen (действующее вещество RU58841), 50 мл.",
-    description: "Gрепарат для местного применения, предназначенный для лечения облысения по мужскому типу c действующим компонентом RU58841",
+    title: "Лосьон Rugen, 50 мл.",
+    description: "Препарат для местного применения, предназначенный для лечения облысения по мужскому типу c действующим веществом RU58841",
     price: "7500 руб.",
     priceNote: "",
     image: "images/rugen-lotion.jpg",
@@ -148,3 +148,4 @@ function openProductModal(productId) {
   const modal = new bootstrap.Modal(document.getElementById("productModal"));
   modal.show();
 }
+
