@@ -36,7 +36,7 @@ const products = [
   },
   {
     id: 5,
-    title: "Лосьон iiSolutions 15% (с азелаиновой кислотой), 60 мл.",
+    title: "Лосьон iiSolutions 15%, 60 мл.",
     description:
       "Лосьон для роста волос и бороды на основе 15% раствора миноксидила с добавлением азелаиновой кислоты",
     price: "2600 руб.",
@@ -63,7 +63,7 @@ const products = [
   },
   {
     id: 8,
-    title: "Лосьон Rexagain 10% (с финастеридом), 100 мл.",
+    title: "Лосьон Rexagain 10%, 100 мл.",
     description:
       "Турецкое средство на основе миноксидила с добавлением других активных компонентов, таких как финастерид, для комплексного действия.",
     price: "1700 руб.",
@@ -148,4 +148,5 @@ function openProductModal(productId) {
   const modal = new bootstrap.Modal(document.getElementById("productModal"));
   modal.show();
 }
+
 
