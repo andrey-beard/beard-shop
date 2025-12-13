@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Средства для роста бороды и волос: Kirkland Minoxidil, Капиксил М, Regain и другие проверенные препараты. Minoxidil Kirkland Signature 5% 60 и 100 мл, таблетки, крем 6%, пена 5%. Оригинальная продукция."
+    />
+
+    <!-- SEO-секция-->
+    <meta
+      property="og:title"
+      content="Купить Minoxidil Kirkland и средства для роста волос"
+    />
+    <meta
+      property="og:description"
+      content="Широкий ассортимент средств для роста волос: Minoxidil Kirkland, миноксидил в таблетках, крем, пена. Гарантия качества."
+    />
+    <meta
+      property="og:url"
+      content="https://andrey-beard.github.io/beard-shop/products.html"
+    />
+
+    <meta
+      name="keywords"
+      content="Киркланд Сигнатур Миноксидил, Kirkland Signature Minoxidil, Kirkland Minoxidil, Миноксидил, Миноксидил таблетки, Лосьон Миноксидил, Крем Миноксидил, Foam Rogaine, Пена Регейн, Rogaine, Регейн, iiSolutions 15, Lotion iiSolutions 15, Rexagain 10, Lotion Rexagain 10, Капиксил М, Capixyl M, Миноксидил для бороды, Андрей Борода, Андрей Хасанов, Andrey Beard, Andrey Khasanov, Крем Minabeard, Minabeard, Лосьон iiSolutions 15"
+    />
+
+    <!-- Гео-метатеги -->
+    <meta name="geo.region" content="RU-AST" />
+    <meta name="geo.placename" content="Астрахань" />
+    <meta name="geo.position" content="46.335454;48.034518" />
+    <meta name="ICBM" content="46.335454, 48.034518" />
+
+    <!-- Язык -->
+    <meta http-equiv="Content-Language" content="ru" />
+    <meta name="language" content="Russian" />
+
+    <title>Андрей Борода - Товары</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link
+      rel="canonical"
+      href="https://andrey-beard.github.io/beard-shop/products.html"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+    <style>
+      .product-card {
+        transition: all 0.3s ease;
+        cursor: pointer;
+        border: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        height: 100%;
+      }
+      .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+      }
+      .product-image {
+        height: 200px;
+        object-fit: cover;
+      }
+      .contact-btn {
+        transition: all 0.3s ease;
+      }
+      .contact-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      footer {
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a
+          class="navbar-brand fw-bold"
+          href="index.html"
+          rel="noopener noreferrer"
+          >Андрей Борода</a
+        >
+        <div class="navbar-nav">
+          <a
+            class="nav-link active"
+            href="products.html"
+            rel="noopener noreferrer"
+            >Товары</a
+          >
+          <a class="nav-link" href="contacts.html" rel="noopener noreferrer"
+            >Контакты</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <div class="container my-5 flex-grow-1">
+      <h1 class="text-center mb-5 display-5 fw-bold text-dark">Товары</h1>
+
+      <div class="row g-4" id="productsGrid">
+        <!-- Карточки грузятся через JS -->
+      </div>
+    </div>
+
+    <!-- Футер -->
+    <footer class="bg-dark text-light py-4 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="mb-1">ИП Хасанов Андрей Андреевич</p>
+            <p class="mb-2">323300000021625</p>
+            <p class="mb-0 small text-secondary">
+              Имеются противопоказания. Перед применением проконсультируйтесь со
+              специалистом
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Модальное окно Bootstrap -->
+    <div class="modal fade" id="productModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-light">
+            <h5 class="modal-title fw-bold" id="modalTitle"></h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body p-4">
+            <div class="text-center mb-4">
+              <img
+                id="modalImage"
+                src=""
+                class="img-fluid rounded"
+                alt=""
+                style="max-height: 300px; max-width: 100%; object-fit: contain"
+              />
+            </div>
+            <p id="modalDescription" class="mb-3 fs-6 text-muted"></p>
+            <h4 id="modalPrice" class="text-danger mb-4 fw-bold"></h4>
+
+            <div class="d-grid gap-3">
+              <a
+                href="https://t.me/andrey23091998"
+                class="btn contact-btn py-3"
+                style="background: #0088cc; color: white"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-telegram me-2"></i> Написать в Telegram
+              </a>
+              <a
+                href="https://wa.me/79033488528"
+                class="btn contact-btn py-3"
+                style="background: #25d366; color: white"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-whatsapp me-2"></i> Написать в WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
